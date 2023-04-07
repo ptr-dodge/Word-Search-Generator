@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="script.js"></script>
+    <title>Word Search Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        td {
+            width: 1.1em;
+            height: 1.1em;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+
+        table {
+            margin: 2em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word Search Generator</h1>
+    <label for="length">Length of the grid:</label>
+    <input type="number" id="length" value="32">
+    <br>
+    <label for="height">Height of the grid:</label>
+    <input type="number" id="height" value="32">
+    <br>
+    <button id="generate">Generate</button>
+    
+    <div id="wordSearch"></div>
+</body>
+
+</html>
